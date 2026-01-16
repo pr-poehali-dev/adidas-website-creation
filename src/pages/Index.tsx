@@ -11,17 +11,20 @@ interface Product {
   price: number;
   image: string;
   badge?: string;
+  description?: string;
+  sizes?: string[];
+  colors?: string[];
 }
 
 const products: Product[] = [
-  { id: 1, name: 'Ultraboost 22', category: 'Обувь', price: 14999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg', badge: 'NEW' },
-  { id: 2, name: 'NMD_R1', category: 'Обувь', price: 12999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg' },
-  { id: 3, name: 'Stan Smith', category: 'Обувь', price: 8999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg' },
-  { id: 4, name: 'Худи Z.N.E.', category: 'Одежда', price: 6999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg', badge: 'HOT' },
-  { id: 5, name: 'Спортивная куртка', category: 'Одежда', price: 9999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg' },
-  { id: 6, name: 'Футболка Trefoil', category: 'Одежда', price: 2999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg' },
-  { id: 7, name: 'Рюкзак Classic', category: 'Аксессуары', price: 3499, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/d28919fc-2e71-41aa-849f-c8db9ac6cef9.jpg' },
-  { id: 8, name: 'Спортивная сумка', category: 'Аксессуары', price: 4999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/d28919fc-2e71-41aa-849f-c8db9ac6cef9.jpg' },
+  { id: 1, name: 'Ultraboost 22', category: 'Обувь', price: 14999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg', badge: 'NEW', description: 'Революционная беговая обувь с технологией энергетического возврата BOOST. Идеальна для марафонов и длительных тренировок.', sizes: ['40', '41', '42', '43', '44', '45'], colors: ['Черный', 'Белый', 'Серый'] },
+  { id: 2, name: 'NMD_R1', category: 'Обувь', price: 12999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg', description: 'Легендарные кроссовки с уникальным дизайном и непревзойденным комфортом для городских улиц.', sizes: ['39', '40', '41', '42', '43', '44'], colors: ['Черный', 'Синий'] },
+  { id: 3, name: 'Stan Smith', category: 'Обувь', price: 8999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/834669f9-6775-4cd5-b7a3-190e000e1ff0.jpg', description: 'Классические теннисные кроссовки с минималистичным дизайном. Икона стиля с 1971 года.', sizes: ['38', '39', '40', '41', '42', '43'], colors: ['Белый', 'Белый/Зелёный'] },
+  { id: 4, name: 'Худи Z.N.E.', category: 'Одежда', price: 6999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg', badge: 'HOT', description: 'Премиальная толстовка с капюшоном из серии Zero Negative Energy. Максимальная концентрация перед тренировкой.', sizes: ['S', 'M', 'L', 'XL', 'XXL'], colors: ['Черный', 'Серый', 'Синий'] },
+  { id: 5, name: 'Спортивная куртка', category: 'Одежда', price: 9999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg', description: 'Ветрозащитная куртка с технологией Climaproof. Защита от непогоды в любых условиях.', sizes: ['S', 'M', 'L', 'XL'], colors: ['Черный', 'Красный'] },
+  { id: 6, name: 'Футболка Trefoil', category: 'Одежда', price: 2999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/2902fd2b-8681-4aa5-bcca-996de78ff18f.jpg', description: 'Классическая футболка с культовым логотипом трилистника. Мягкий хлопок для ежедневного ношения.', sizes: ['S', 'M', 'L', 'XL'], colors: ['Черный', 'Белый', 'Серый'] },
+  { id: 7, name: 'Рюкзак Classic', category: 'Аксессуары', price: 3499, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/d28919fc-2e71-41aa-849f-c8db9ac6cef9.jpg', description: 'Вместительный рюкзак с множеством карманов. Подходит для тренировок, учебы и путешествий.', colors: ['Черный', 'Синий'] },
+  { id: 8, name: 'Спортивная сумка', category: 'Аксессуары', price: 4999, image: 'https://cdn.poehali.dev/projects/6510de84-b402-49fc-ac8c-942d701449e8/files/d28919fc-2e71-41aa-849f-c8db9ac6cef9.jpg', description: 'Прочная спортивная сумка с отдельным отделением для обуви. Идеальна для зала и поездок.', colors: ['Черный', 'Серый', 'Красный'] },
 ];
 
 const Index = () => {
@@ -29,6 +32,9 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState('Все');
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [selectedSize, setSelectedSize] = useState<string>('');
+  const [selectedColor, setSelectedColor] = useState<string>('');
 
   const categories = ['Все', 'Обувь', 'Одежда', 'Аксессуары'];
 
@@ -163,6 +169,7 @@ const Index = () => {
               <div
                 key={product.id}
                 className="group cursor-pointer animate-fade-in"
+                onClick={() => setSelectedProduct(product)}
               >
                 <div className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden mb-4">
                   <img
@@ -176,7 +183,10 @@ const Index = () => {
                     </Badge>
                   )}
                   <button
-                    onClick={() => addToCart(product)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      addToCart(product);
+                    }}
                     className="absolute bottom-3 right-3 bg-black text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:scale-110"
                   >
                     <Icon name="Plus" size={20} />
